@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initail-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="header">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" />
+            <nav id="nav-bar">
+                <a href="#form-section" class="nav-link">News letter</a>
+                <a href="#features-section" class="nav-link">Features</a>
+                <a href="#video-section" class="nav-link">How it works</a>
+            </nav>
+        </header>
+        <main>
+            <section id="form-section">
+                <header>
+                    Handcrafted, home-made masterpieces
+                </header>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" placeholder="Enter your email" id="email" />
+                    <input type="submit" id="submit" value="GET STARTED"/>
+                </form>
+            </section>
+            <section id="features-section">
+                <ul id="features-list">
+                    <li>
+                        <i class="fa fa-3x fa-fire"></i>
+                        <div>
+                            <h4>Premium Materials</h4>
+                            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-3x fa-truck"></i>
+                        <div>
+                            <h4>Fast Shipping</h4>
+                            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-3x fa-battery-full"></i>
+                        <div>
+                            <h4>Quality Assurance</h4>
+                            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="video-section">
+                <video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.360p.webm" controls id="video"></video>
+            </section>
+        </main>
+    </body>
+</html>

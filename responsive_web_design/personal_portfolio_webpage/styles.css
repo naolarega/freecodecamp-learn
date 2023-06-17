@@ -1,0 +1,133 @@
+:root {
+    --background-color: #dfdfdf;
+    --foreground-color: #373737;
+    --primary-color: #a9cf64;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav#navbar {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    margin-right: 40px;
+}
+
+nav#navbar > a {
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: x-large;
+}
+
+section#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#welcome-section > h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+section#welcome-section > h4 {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+section#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 40px 0;
+}
+
+section#projects > h1 {
+    padding-bottom: 10px;
+    border-bottom: solid;
+    color: var(--background-color);
+}
+
+div#project-tiles {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.project-tile {
+    width: 30%;
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+div.project-tile > a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+img.project-tile-image {
+    object-fit: cover;
+    width: 100%;
+}
+
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+section#contact > h1 {
+    font-size: 3.5rem;
+}
+
+section#contact > h4 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+div#profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a#profile-link {
+    color: var(--primary-color);
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-around;
+    border-top: 4px solid var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #373737;
+        --foreground-color: #dfdfdf;
+        --primary-color: #a9cf64;
+    }
+}
