@@ -1,0 +1,51 @@
+:root {
+    --theme-color: "#16a085";
+}
+
+body#random-quote-machine-body,
+#new-quote {
+    background-color: var(--theme-color);
+    color: white;
+}
+
+body#random-quote-machine-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-box {
+    width: 30vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+#text, #author {
+    color: var(--theme-color);
+}
+
+#text {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+}
+
+#author {
+    display: block;
+    text-align: right;
+}
+
+#new-quote {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#tweet-quote {
+    color: var(--theme-color);
+    background-color: white;
+    text-decoration: none;
+}
