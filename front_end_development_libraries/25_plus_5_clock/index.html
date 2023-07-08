@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>25 + 5 clock</title>
+
+        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+        <script type="text/javascript" defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <script type="text/javascript" defer src="./main.js"></script>
+    </head>
+    <body>
+        <div id="twenty-five-plus-five-clock">
+            <div id="length">
+                <div id="break-control">
+                    <div id="break-label">Break Length</div>
+                    <div>
+                        <i class="fa fa-arrow-up" id="break-increment"></i>
+                        <span id="break-length">5</span>
+                        <i class="fa fa-arrow-down" id="break-decrement"></i>
+                    </div>
+                </div>
+                <div id="session-control">
+                    <div id="session-label">Session Length</div>
+                    <div>
+                        <i class="fa fa-arrow-up" id="session-increment"></i>
+                        <span id="session-length">25</span>
+                        <i class="fa fa-arrow-down" id="session-decrement"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="timer">
+                <span id="timer-label">Session</span>
+                <span id="time-left">25:00</span>
+                <div id="timer-controls">
+                    <i class="fa fa-play" id="start_stop"></i>
+                    <i class="fa fa-refresh" id="reset"></i>
+                </div>
+                <audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+            </div>
+        </div>
+    </body>
+</html>
